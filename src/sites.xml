@@ -1,0 +1,70 @@
+<sites>
+	<site name="GiantBomb.com" image="http://media.giantbomb.com/uploads/0/27/933918-bombcast.jpg">
+		<feeds>
+			<feed name="All Videos">
+				<urls>
+					<url quality="hd">http://www.giantbomb.com/videos/feed/hd/</url>
+					<url quality="high">http://www.giantbomb.com/videos/feed/high/</url>
+					<url quality="low">http://www.giantbomb.com/videos/feed/low/</url>
+					<url quality="mobile">http://www.giantbomb.com/videos/feed/mobile/</url>
+				</urls>
+			</feed>
+			<feed name="Quick Looks">
+				<urls>
+					<url quality="hd">http://www.giantbomb.com/videos/feed/hd/3/</url>
+					<url quality="high">http://www.giantbomb.com/videos/feed/high/3/</url>
+					<url quality="low">http://www.giantbomb.com/videos/feed/low/3/</url>
+					<url quality="mobile">http://www.giantbomb.com/videos/feed/mobile/3/</url>
+				</urls>
+			</feed>
+		</feeds>
+	</site>
+	<site name="Tested.com" image="http://media.tested.com/uploads/0/3/1444-989_podcastlogo_correct_size.jpg">
+		<feeds>
+			<feed name="All Videos">
+				<urls>
+					<url quality="hd">http://www.tested.com/videos/feed/hd/</url>
+					<url quality="high">http://www.tested.com/videos/feed/high/</url>
+					<url quality="low">http://www.tested.com/videos/feed/low/</url>
+					<url quality="mobile">http://www.tested.com/videos/feed/mobile/</url>
+				</urls>
+			</feed>
+		</feeds>
+	</site>
+	<site name="Screened.com" image="http://media.screened.com/uploads/0/40/66750-screened_default.jpg">
+		<feeds>
+			<feed name="All Videos">
+				<urls>
+					<url quality="hd">http://www.screened.com/videos/feed/hd/</url>
+					<url quality="high">http://www.screened.com/videos/feed/high/</url>
+					<url quality="low">http://www.screened.com/videos/feed/low/</url>
+					<url quality="mobile">http://www.screened.com/videos/feed/mobile/</url>
+				</urls>
+			</feed>
+		</feeds>
+	</site>
+	<site name="ComicVine.com" image="">
+		<feeds>
+			<feed name="All Videos">
+				<urls>
+					<url quality="hd">http://www.comicvine.com/videos/feed/hd/</url>
+					<url quality="high">http://www.comicvine.com/videos/feed/high/</url>
+					<url quality="low">http://www.comicvine.com/videos/feed/low/</url>
+					<url quality="mobile">http://www.comicvine.com/videos/feed/mobile/</url>
+				</urls>
+			</feed>
+		</feeds>
+	</site>
+	<site name="AnimeVice.com" image="">
+		<feeds>
+			<feed name="All Videos">
+				<urls>
+					<url quality="hd">http://www.animevice.com/videos/feed/hd/</url>
+					<url quality="high">http://www.animevice.com/videos/feed/high/</url>
+					<url quality="low">http://www.animevice.com/videos/feed/low/</url>
+					<url quality="mobile">http://www.animevice.com/videos/feed/mobile/</url>
+				</urls>
+			</feed>
+		</feeds>
+	</site>
+</sites>
