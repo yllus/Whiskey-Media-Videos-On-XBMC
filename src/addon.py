@@ -3,8 +3,8 @@ import sys
 import xml.dom.minidom
 
 # XBMC imports.
-#import xbmcgui
-#import xbmcplugin
+import xbmcgui
+import xbmcplugin
 
 # Custom (this plugin) imports.
 from Site import Site
@@ -43,11 +43,11 @@ def displaySiteListing():
     
     # Build the top-level directory containing the names of the various Whiskey Media websites.
     for site in array_sites:
-        #listItem = xbmcgui.ListItem(site.name)
-        #xbmcplugin.addDirectoryItem(_handle, '', listItem)
+        listItem = xbmcgui.ListItem(site.name)
+        xbmcplugin.addDirectoryItem(_handle, '', listItem)
         print site.name
     
-    #xbmcplugin.endOfDirectory(_handle)
+    xbmcplugin.endOfDirectory(_handle)
 
 # Call an action based on the parameters the script is run using.
 displaySiteListing()
