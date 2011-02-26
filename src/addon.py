@@ -29,12 +29,13 @@ def displayFeedListing( name_site ):
                 XBMCExtensions.addDirectoryItem(feed.name, _handle, _path + '?action=2&site=' + urllib.quote_plus(site.name) + '&feed=' + urllib.quote_plus(feed.name))
             XBMCExtensions.endOfDirectory(_handle)
 
+# For the top-level menu, create a list of menu items naming each of the Whiskey Media websites.
 def displaySiteListing():    
-    # Build the top-level directory containing the names of the various Whiskey Media websites.
     for site in array_sites:
         XBMCExtensions.addDirectoryItem(site.name, _handle, _path + '?action=1&site=' + urllib.quote_plus(site.name))
     XBMCExtensions.endOfDirectory(_handle)
 
+# Get the value of a given URL parameter.
 def getActionValue( name_action ):
     o = urlparse(_argv)
     params = o.query.split('&')
@@ -43,6 +44,7 @@ def getActionValue( name_action ):
         if arr_action[0] == name_action:
             return arr_action[1]
 
+# Read a list of sites and feeds from an XML file into memory.
 def getSitesAndFeeds():
     doc = xml.dom.minidom.parse('sites.xml')
     
