@@ -21,15 +21,18 @@ video_quality = 'high'
 # Store the list of sites and feeds inside them.
 array_sites = []
 
+# For the selected site, create a list of menu items for the site's feeds.
 def displayFeedListing( name_site ):
     for site in array_sites:
-        if site.name == name_site:
-            print "Found the site!"
+        if site.name == urllib.unquote_plus(name_site):
+            for feed in site.feeds:
+                XBMCExtensions.addDirectoryItem(feed.name, _handle, _path + '?action=2&site=' + urllib.quote_plus(site.name) + '&feed=' + urllib.quote_plus(feed.name))
+            XBMCExtensions.endOfDirectory(_handle)
 
 def displaySiteListing():    
     # Build the top-level directory containing the names of the various Whiskey Media websites.
     for site in array_sites:
-        XBMCExtensions.addDirectoryItem(site.name, _handle, _path + '?action=1&value=' + urllib.quote_plus(site.name))
+        XBMCExtensions.addDirectoryItem(site.name, _handle, _path + '?action=1&site=' + urllib.quote_plus(site.name))
     XBMCExtensions.endOfDirectory(_handle)
 
 def getActionValue( name_action ):
@@ -56,6 +59,7 @@ def getSitesAndFeeds():
             for node_url in node_feed.getElementsByTagName('url'):
                 url_quality = node_url.getAttribute('quality')
                 feed.urls[url_quality] = SimplerXML.getText(node_url, 'url')
+            site.feeds.append(feed)
     
         array_sites.append(site)
 
@@ -65,9 +69,10 @@ getSitesAndFeeds()
 # Call an action based on the parameters the script is run using.
 if not _argv:
     displaySiteListing()
+    #displayFeedListing('GiantBomb.com')
 else:
     if getActionValue('action') == '1':
-        displayFeedListing(getActionValue('value'))
+        displayFeedListing(getActionValue('site'))
     elif getActionValue('action') == '2':
         print "Displaying the content of a feed."
     else:
