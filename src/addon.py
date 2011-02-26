@@ -101,8 +101,6 @@ getSitesAndFeeds()
 print "_argv = " + _argv 
 if not _argv:
     displaySiteListing()
-    #displayFeedListing('GiantBomb.com')
-    #displayVideoListing('GiantBomb.com', 'All Videos')
 else:
     if getActionValue('action') == '1':
         displayFeedListing(getActionValue('site'))
