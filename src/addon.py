@@ -1,6 +1,8 @@
 # Python (system) imports.
 import sys
 import xml.dom.minidom
+import urllib
+from urlparse import urlparse
 
 # XBMC imports.
 import xbmcgui
@@ -15,15 +17,38 @@ from XBMCExtensions import XBMCExtensions
 # Get environmental settings.
 _path = sys.argv[0]
 _handle = XBMCExtensions.getHandle()
-#_argv = sys.argv[2]
+_argv = sys.argv[2]
 
 # Retrieve and set the video quality level.
 video_quality = 'high'
 
-def displaySiteListing():
-    doc = xml.dom.minidom.parse('sites.xml')
+# Store the list of sites and feeds inside them.
+array_sites = []
+
+def displayFeedListing( name_site ):
+    listItem = xbmcgui.ListItem("Feed item")
+    xbmcplugin.addDirectoryItem(_handle, '', listItem)
+    xbmcplugin.endOfDirectory(_handle)
+
+def displaySiteListing():    
+    # Build the top-level directory containing the names of the various Whiskey Media websites.
+    for site in array_sites:
+        listItem = xbmcgui.ListItem(site.name)
+        xbmcplugin.addDirectoryItem(_handle, _path + '?action=1&value=' + urllib.quote_plus(site.name), listItem)
+        print site.name
     
-    array_sites = []
+    xbmcplugin.endOfDirectory(_handle)
+
+def getActionValue( name_action ):
+    o = urlparse(_argv)
+    params = o.query.split('&')
+    for i in params:
+        arr_action = i.split('=', 1)
+        if arr_action[0] == name_action:
+            return arr_action[1]
+
+def getSitesAndFeeds():
+    doc = xml.dom.minidom.parse('sites.xml')
     
     # Iterate through the list of sites in the XML feed.
     for node_site in doc.getElementsByTagName('site'):
@@ -40,14 +65,18 @@ def displaySiteListing():
                 feed.urls[url_quality] = SimplerXML.getText(node_url, 'url')
     
         array_sites.append(site)
-    
-    # Build the top-level directory containing the names of the various Whiskey Media websites.
-    for site in array_sites:
-        listItem = xbmcgui.ListItem(site.name)
-        xbmcplugin.addDirectoryItem(_handle, '', listItem)
-        print site.name
-    
-    xbmcplugin.endOfDirectory(_handle)
+
+# Always load the list of sites and feeds.
+getSitesAndFeeds()
 
 # Call an action based on the parameters the script is run using.
-displaySiteListing()
+print "_argv = " + _argv
+if not _argv:
+    displaySiteListing()
+else:
+    if getActionValue('action') == '1':
+        displayFeedListing(getActionValue('value'))
+    elif getActionValue('action') == '2':
+        print "Displaying the content of a feed."
+    else
+        displaySiteListing()

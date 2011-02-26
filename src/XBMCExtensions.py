@@ -5,7 +5,7 @@ class Callable:
         self.__call__ = anycallable
         
 class XBMCExtensions:
-    def getHandle(self):
+    def getHandle():
         if len(sys.argv) >= 2:
             return int(sys.argv[1])
         else:
