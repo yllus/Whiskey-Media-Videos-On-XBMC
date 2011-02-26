@@ -178,66 +178,66 @@
 	<site name="ComicVine.com" image="comicvine.png">
 			<feed name="All Videos">
 				<urls>
-					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/
-					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/
-					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/
-					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/</url>
 				</urls>
 			</feed>
 			<feed name="3-Min. Expert">
 				<urls>
-					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/7/
-					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/7/
-					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/7/
-					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/7/
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/7/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/7/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/7/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/7/</url>
 				</urls>
 			</feed>
 			<feed name="Events">
 				<urls>
-					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/4/
-					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/4/
-					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/4/
-					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/4/
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/4/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/4/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/4/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/4/</url>
 				</urls>
 			</feed>
 			<feed name="Features">
 				<urls>
-					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/3/
-					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/3/
-					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/3/
-					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/3/
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/3/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/3/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/3/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/3/</url>
 				</urls>
 			</feed>
 			<feed name="News">
 				<urls>
-					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/5/
-					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/5/
-					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/5/
-					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/5/
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/5/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/5/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/5/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/5/</url>
 				</urls>
 			</feed>
 			<feed name="Preview Theatre">
 				<urls>
-					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/8/
-					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/8/
-					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/8/
-					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/8/
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/8/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/8/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/8/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/8/</url>
 				</urls>
 			</feed>
 			<feed name="Reviews">
 				<urls>
-					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/1/
-					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/1/
-					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/1/
-					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/1/
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/1/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/1/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/1/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/1/</url>
 				</urls>
 			</feed>
 			<feed name="Trailers">
 				<urls>
-					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/2/
-					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/2/
-					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/2/
-					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/2/
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/2/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/2/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/low/2/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/2/</url>
 				</urls>
 			</feed>
 	</site>
