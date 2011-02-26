@@ -36,7 +36,6 @@ def displayVideoListing( name_site, name_feed ):
                     url = url.replace('${USERNAME}', wm_username)
                     url = url.replace('${PASSWORD}', wm_password)
     
-    print "About to parse " + url
     doc = xml.dom.minidom.parseString(urllib.urlopen(url).read())
     
     # Iterate through the list of items in the feed.
@@ -45,7 +44,9 @@ def displayVideoListing( name_site, name_feed ):
             title = SimplerXML.getText(node_title, 'title')
         for node_link in node_item.getElementsByTagName('link'):
             link = SimplerXML.getText(node_link, 'link')
-        print title + " = " + link
+        XBMCExtensions.addDirectoryItem(title, _handle, link)
+        
+    XBMCExtensions.endOfDirectory(_handle)
 
 # For the selected site, create a list of menu items for the site's feeds.
 def displayFeedListing( name_site ):
