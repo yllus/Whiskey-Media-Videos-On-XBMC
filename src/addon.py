@@ -4,10 +4,6 @@ import xml.dom.minidom
 import urllib
 from urlparse import urlparse
 
-# XBMC imports.
-import xbmcgui
-import xbmcplugin
-
 # Custom (this plugin) imports.
 from Site import Site
 from Feed import Feed
@@ -17,7 +13,7 @@ from XBMCExtensions import XBMCExtensions
 # Get environmental settings.
 _path = sys.argv[0]
 _handle = XBMCExtensions.getHandle()
-_argv = sys.argv[2]
+_argv = XBMCExtensions.getPath()
 
 # Retrieve and set the video quality level.
 video_quality = 'high'
@@ -26,18 +22,15 @@ video_quality = 'high'
 array_sites = []
 
 def displayFeedListing( name_site ):
-    listItem = xbmcgui.ListItem("Feed item")
-    xbmcplugin.addDirectoryItem(_handle, '', listItem)
-    xbmcplugin.endOfDirectory(_handle)
+    for site in array_sites:
+        if site.name == name_site:
+            print "Found the site!"
 
 def displaySiteListing():    
     # Build the top-level directory containing the names of the various Whiskey Media websites.
     for site in array_sites:
-        listItem = xbmcgui.ListItem(site.name)
-        xbmcplugin.addDirectoryItem(_handle, _path + '?action=1&value=' + urllib.quote_plus(site.name), listItem)
-        print site.name
-    
-    xbmcplugin.endOfDirectory(_handle)
+        XBMCExtensions.addDirectoryItem(site.name, _handle, _path + '?action=1&value=' + urllib.quote_plus(site.name))
+    XBMCExtensions.endOfDirectory(_handle)
 
 def getActionValue( name_action ):
     o = urlparse(_argv)
@@ -70,7 +63,6 @@ def getSitesAndFeeds():
 getSitesAndFeeds()
 
 # Call an action based on the parameters the script is run using.
-print "_argv = " + _argv
 if not _argv:
     displaySiteListing()
 else:
@@ -78,5 +70,5 @@ else:
         displayFeedListing(getActionValue('value'))
     elif getActionValue('action') == '2':
         print "Displaying the content of a feed."
-    else
+    else:
         displaySiteListing()
