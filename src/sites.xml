@@ -126,16 +126,54 @@
 			</feed>
 	</site>
 	<site name="Screened.com" image="http://media.screened.com/uploads/0/40/66750-screened_default.jpg">
-		<feeds>
 			<feed name="All Videos">
 				<urls>
-					<url quality="hd">http://www.screened.com/videos/feed/hd/</url>
-					<url quality="high">http://www.screened.com/videos/feed/high/</url>
-					<url quality="low">http://www.screened.com/videos/feed/low/</url>
-					<url quality="mobile">http://www.screened.com/videos/feed/mobile/</url>
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/hd/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/high/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/low/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/mobile/</url>
 				</urls>
 			</feed>
-		</feeds>
+			<feed name="Besties">
+				<urls>
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/hd/5/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/high/5/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/low/5/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/mobile/5/</url>
+				</urls>
+			</feed>
+			<feed name="Defending Your Movie">
+				<urls>
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/hd/3/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/high/3/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/low/3/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/mobile/3/</url>
+				</urls>
+			</feed>
+			<feed name="Features">
+				<urls>
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/hd/1/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/high/1/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/low/1/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/mobile/1/</url>
+				</urls>
+			</feed>
+			<feed name="Remake Rematch">
+				<urls>
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/hd/4/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/high/4/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/low/4/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/mobile/4/</url>
+				</urls>
+			</feed>
+			<feed name="Trailers">
+				<urls>
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/hd/2/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/high/2/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/low/2/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/mobile/2/</url>
+				</urls>
+			</feed>
 	</site>
 	<site name="ComicVine.com" image="">
 		<feeds>
