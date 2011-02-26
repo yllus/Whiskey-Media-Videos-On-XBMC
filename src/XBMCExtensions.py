@@ -26,10 +26,10 @@ class XBMCExtensions:
             return ''
     getPath = Callable(getPath)
     
-    def addDirectoryItem( name, handle, url ):
+    def addDirectoryItem( name, handle, url, isfolder ):
         if use_xbmc == 1:
             listItem = xbmcgui.ListItem(name)
-            xbmcplugin.addDirectoryItem(handle, url, listItem)
+            xbmcplugin.addDirectoryItem(handle, url, listItem, isfolder)
         else:
             print "Item " + name + " points to URL " + url
     addDirectoryItem = Callable(addDirectoryItem)

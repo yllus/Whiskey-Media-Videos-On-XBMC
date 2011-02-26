@@ -44,7 +44,7 @@ def displayVideoListing( name_site, name_feed ):
             title = SimplerXML.getText(node_title, 'title')
         for node_link in node_item.getElementsByTagName('link'):
             link = SimplerXML.getText(node_link, 'link')
-        XBMCExtensions.addDirectoryItem(title, _handle, link)
+        XBMCExtensions.addDirectoryItem(title, _handle, link, False)
         
     XBMCExtensions.endOfDirectory(_handle)
 
@@ -54,14 +54,14 @@ def displayFeedListing( name_site ):
         if site.name == urllib.unquote_plus(name_site):
             for feed in site.feeds:
                 path = _path + '?action=2&site=' + urllib.quote_plus(site.name) + '&feed=' + urllib.quote_plus(feed.name)
-                XBMCExtensions.addDirectoryItem(feed.name, _handle, path)
+                XBMCExtensions.addDirectoryItem(feed.name, _handle, path, True)
             XBMCExtensions.endOfDirectory(_handle)
 
 # For the top-level menu, create a list of menu items naming each of the Whiskey Media websites.
 def displaySiteListing():    
     for site in array_sites:
         path =  _path + '?action=1&site=' + urllib.quote_plus(site.name)
-        XBMCExtensions.addDirectoryItem(site.name, _handle, path)
+        XBMCExtensions.addDirectoryItem(site.name, _handle, path, True)
     XBMCExtensions.endOfDirectory(_handle)
 
 # Get the value of a given URL parameter.
