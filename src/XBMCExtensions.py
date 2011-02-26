@@ -1,9 +1,10 @@
 # Python (system) imports.
 import sys
 
-# XBMC imports (if XBMC is present).
+# XBMC imports.
 import xbmcgui
 import xbmcplugin
+import xbmcaddon
 
 class Callable:
     def __init__( self, anycallable ):
@@ -23,6 +24,10 @@ class XBMCExtensions:
         else:
             return ''
     getPath = Callable(getPath)
+    
+    def getSettings( plugin_id ):
+        return xbmcaddon.Addon(plugin_id)
+    getSettings = Callable(getSettings)
     
     def addDirectoryItem( name, handle, url, image, isfolder ):
         listItem = xbmcgui.ListItem(name, image, image)

@@ -15,10 +15,12 @@ _path = sys.argv[0]
 _handle = XBMCExtensions.getHandle()
 _argv = XBMCExtensions.getPath()
 
-# Retrieve and set the video quality level.
-video_quality = 'high'
-wm_username = 'sully'
-wm_password = 'password'
+# Retrieve settings for the plugin.
+plugin_id = 'plugin.video.whiskeymedia'
+plugin_settings = XBMCExtensions.getSettings(plugin_id)
+video_quality = plugin_settings.getSetting('video_quality')
+wm_username = plugin_settings.getSetting('username')
+wm_password = plugin_settings.getSetting('password')
 
 # Store the list of sites and feeds inside them.
 array_sites = []
@@ -99,8 +101,10 @@ def getSitesAndFeeds():
 getSitesAndFeeds()
 
 # Call an action based on the parameters the script is run using.
-print "_argv = " + _argv 
-if not _argv:
+#print "_argv = " + _argv 
+if wm_username == '' or wm_password == '':
+    plugin_settings.openSettings()
+elif not _argv:
     displaySiteListing()
 else:
     if getActionValue('action') == '1':
