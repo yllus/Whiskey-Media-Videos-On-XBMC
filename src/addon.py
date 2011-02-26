@@ -53,13 +53,15 @@ def displayFeedListing( name_site ):
     for site in array_sites:
         if site.name == urllib.unquote_plus(name_site):
             for feed in site.feeds:
-                XBMCExtensions.addDirectoryItem(feed.name, _handle, _path + '?action=2&site=' + urllib.quote_plus(site.name) + '&feed=' + urllib.quote_plus(feed.name))
+                path = _path + '?action=2&site=' + urllib.quote_plus(site.name) + '&feed=' + urllib.quote_plus(feed.name)
+                XBMCExtensions.addDirectoryItem(feed.name, _handle, path)
             XBMCExtensions.endOfDirectory(_handle)
 
 # For the top-level menu, create a list of menu items naming each of the Whiskey Media websites.
 def displaySiteListing():    
     for site in array_sites:
-        XBMCExtensions.addDirectoryItem(site.name, _handle, _path + '?action=1&site=' + urllib.quote_plus(site.name))
+        path =  'XBMC.Container.Update(' + _path + '?action=1&site=' + urllib.quote_plus(site.name) + ')'
+        XBMCExtensions.addDirectoryItem(site.name, _handle, path)
     XBMCExtensions.endOfDirectory(_handle)
 
 # Get the value of a given URL parameter.
@@ -96,6 +98,7 @@ def getSitesAndFeeds():
 getSitesAndFeeds()
 
 # Call an action based on the parameters the script is run using.
+print "_argv = " + _argv 
 if not _argv:
     displaySiteListing()
     #displayFeedListing('GiantBomb.com')
