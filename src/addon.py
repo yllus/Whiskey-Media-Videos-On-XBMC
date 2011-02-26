@@ -97,9 +97,9 @@ getSitesAndFeeds()
 
 # Call an action based on the parameters the script is run using.
 if not _argv:
-    #displaySiteListing()
+    displaySiteListing()
     #displayFeedListing('GiantBomb.com')
-    displayVideoListing('GiantBomb.com', 'All Videos')
+    #displayVideoListing('GiantBomb.com', 'All Videos')
 else:
     if getActionValue('action') == '1':
         displayFeedListing(getActionValue('site'))
