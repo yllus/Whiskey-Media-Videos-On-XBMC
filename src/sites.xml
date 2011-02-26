@@ -78,50 +78,50 @@
 	<site name="Tested.com" image="http://media.tested.com/uploads/0/3/1444-989_podcastlogo_correct_size.jpg">
 			<feed name="All Videos">
 				<urls>
-					<url quality="hd">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/hd/
-					<url quality="high">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/high/
-					<url quality="low">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/low/
-					<url quality="mobile">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/mobile/
+					<url quality="hd">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/hd/</url>
+					<url quality="high">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/high/</url>
+					<url quality="low">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/low/</url>
+					<url quality="mobile">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/mobile/</url>
 				</urls>
 			</feed>
 			<feed name="Events">
 				<urls>
-					<url quality="hd">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/hd/3/
-					<url quality="high">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/high/3/
-					<url quality="low">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/low/3/
-					<url quality="mobile">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/mobile/3/
+					<url quality="hd">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/hd/3/</url>
+					<url quality="high">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/high/3/</url>
+					<url quality="low">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/low/3/</url>
+					<url quality="mobile">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/mobile/3/</url>
 				</urls>
 			</feed>
 			<feed name="Features">
 				<urls>
-					<url quality="hd">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/hd/2/
-					<url quality="high">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/high/2/
-					<url quality="low">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/low/2/
-					<url quality="mobile">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/mobile/2/
+					<url quality="hd">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/hd/2/</url>
+					<url quality="high">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/high/2/</url>
+					<url quality="low">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/low/2/</url>
+					<url quality="mobile">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/mobile/2/</url>
 				</urls>
 			</feed>
 			<feed name="First Looks">
 				<urls>
-					<url quality="hd">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/hd/5/
-					<url quality="high">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/high/5/
-					<url quality="low">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/low/5/
-					<url quality="mobile">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/mobile/5/
+					<url quality="hd">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/hd/5/</url>
+					<url quality="high">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/high/5/</url>
+					<url quality="low">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/low/5/</url>
+					<url quality="mobile">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/mobile/5/</url>
 				</urls>
 			</feed>
 			<feed name="How To">
 				<urls>
-					<url quality="hd">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/hd/1/
-					<url quality="high">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/high/1/
-					<url quality="low">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/low/1/
-					<url quality="mobile">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/mobile/1/
+					<url quality="hd">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/hd/1/</url>
+					<url quality="high">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/high/1/</url>
+					<url quality="low">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/low/1/</url>
+					<url quality="mobile">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/mobile/1/</url>
 				</urls>
 			</feed>
 			<feed name="Reviews">
 				<urls>
-					<url quality="hd">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/hd/4/
-					<url quality="high">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/high/4/
-					<url quality="low">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/low/4/
-					<url quality="mobile">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&next=/videos/feed/mobile/4/
+					<url quality="hd">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/hd/4/</url>
+					<url quality="high">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/high/4/</url>
+					<url quality="low">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/low/4/</url>
+					<url quality="mobile">https://auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/mobile/4/</url>
 				</urls>
 			</feed>
 	</site>
