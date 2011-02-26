@@ -1,0 +1,5 @@
+<settings>
+   <setting id="username" type="text" label="30000" default=""/>
+   <setting id="password" type="text" label="30001" default=""/>
+   <setting id="video_quality" type="enum" label="30002" values="HD|High|Low|Mobile" default="High"/>
+</settings>
