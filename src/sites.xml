@@ -266,7 +266,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/mobile/3/</url>
 				</urls>
 			</feed>
-			<feed name="Q & A">
+			<feed name="Q &amp; A">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/hd/7/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/high/7/</url>
