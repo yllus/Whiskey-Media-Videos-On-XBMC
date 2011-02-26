@@ -60,7 +60,7 @@ def displayFeedListing( name_site ):
 # For the top-level menu, create a list of menu items naming each of the Whiskey Media websites.
 def displaySiteListing():    
     for site in array_sites:
-        path =  'XBMC.Container.Update(' + _path + '?action=1&site=' + urllib.quote_plus(site.name) + ')'
+        path =  _path + '?action=1&site=' + urllib.quote_plus(site.name)
         XBMCExtensions.addDirectoryItem(site.name, _handle, path)
     XBMCExtensions.endOfDirectory(_handle)
 
