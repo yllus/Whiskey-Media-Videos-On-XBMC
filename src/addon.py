@@ -17,9 +17,35 @@ _argv = XBMCExtensions.getPath()
 
 # Retrieve and set the video quality level.
 video_quality = 'high'
+wm_username = 'sully'
+wm_password = 'password'
 
 # Store the list of sites and feeds inside them.
 array_sites = []
+
+# For the selected site and feed, create a list of menu items for the videos in the feed.
+def displayVideoListing( name_site, name_feed ):
+    # Get the URL from the site's definition.
+    url = ''
+    for site in array_sites:
+        if site.name == urllib.unquote_plus(name_site):
+            for feed in site.feeds:
+                if feed.name == urllib.unquote_plus(name_feed):
+                    # Swap the username and password into the URL.
+                    url = feed.urls[video_quality]
+                    url = url.replace('${USERNAME}', wm_username)
+                    url = url.replace('${PASSWORD}', wm_password)
+    
+    print "About to parse " + url
+    doc = xml.dom.minidom.parseString(urllib.urlopen(url).read())
+    
+    # Iterate through the list of items in the feed.
+    for node_item in doc.getElementsByTagName('item'):
+        for node_title in node_item.getElementsByTagName('title'):
+            title = SimplerXML.getText(node_title, 'title')
+        for node_link in node_item.getElementsByTagName('link'):
+            link = SimplerXML.getText(node_link, 'link')
+        print title + " = " + link
 
 # For the selected site, create a list of menu items for the site's feeds.
 def displayFeedListing( name_site ):
@@ -70,12 +96,13 @@ getSitesAndFeeds()
 
 # Call an action based on the parameters the script is run using.
 if not _argv:
-    displaySiteListing()
+    #displaySiteListing()
     #displayFeedListing('GiantBomb.com')
+    displayVideoListing('GiantBomb.com', 'All Videos')
 else:
     if getActionValue('action') == '1':
         displayFeedListing(getActionValue('site'))
     elif getActionValue('action') == '2':
-        print "Displaying the content of a feed."
+        displayVideoListing(getActionValue('site'), getActionValue('feed'))
     else:
         displaySiteListing()
