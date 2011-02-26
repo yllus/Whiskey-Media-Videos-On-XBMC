@@ -25,6 +25,30 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/6/</url>
 				</urls>
 			</feed>
+			<feed name="Features">
+				<urls>
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/8/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/8/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/low/8/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/8/</url>
+				</urls>
+			</feed>
+			<feed name="Gameplay">
+				<urls>
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/9/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/9/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/low/9/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/9/</url>
+				</urls>
+			</feed>
+			<feed name="Quick Looks">
+				<urls>
+					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/3/</url>
+					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/3/</url>
+					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/low/3/</url>
+					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/3/</url>
+				</urls>
+			</feed>
 			<feed name="Reviews">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/2/</url>
@@ -47,30 +71,6 @@
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/7/</url>
 					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/low/7/</url>
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/7/</url>
-				</urls>
-			</feed>
-			<feed name="Quick Looks">
-				<urls>
-					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/3/</url>
-					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/3/</url>
-					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/low/3/</url>
-					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/3/</url>
-				</urls>
-			</feed>
-			<feed name="Features">
-				<urls>
-					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/8/</url>
-					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/8/</url>
-					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/low/8/</url>
-					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/8/</url>
-				</urls>
-			</feed>
-			<feed name="Gameplay">
-				<urls>
-					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/9/</url>
-					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/9/</url>
-					<url quality="low">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/low/9/</url>
-					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/9/</url>
 				</urls>
 			</feed>
 		</feeds>
