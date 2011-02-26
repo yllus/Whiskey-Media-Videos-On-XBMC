@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.whiskeymedia" name="Whiskey Media Videos" version="0.1" provider-name="Sully">
+<addon id="plugin.video.whiskeymedia" name="Whiskey Media Videos" version="0.1" provider-name="yllus">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
   </requires>
