@@ -27,6 +27,16 @@ array_sites = []
 
 # For the selected site and feed, create a list of menu items for the videos in the feed.
 def displayVideoListing( name_site, name_feed ):
+    # Turn the ENUM value for video quality into a named string.
+    if video_quality == '1':
+        vq = 'hd'
+    elif video_quality == '2':
+        vq = 'low'
+    elif video_quality == '3':
+        vq = 'mobile'
+    else:
+        vq = 'high'
+    
     # Get the URL from the site's definition.
     url = ''
     for site in array_sites:
@@ -34,7 +44,7 @@ def displayVideoListing( name_site, name_feed ):
             for feed in site.feeds:
                 if feed.name == urllib.unquote_plus(name_feed):
                     # Swap the username and password into the URL.
-                    url = feed.urls[video_quality]
+                    url = feed.urls[vq]
                     url = url.replace('${USERNAME}', wm_username)
                     url = url.replace('${PASSWORD}', wm_password)
     
@@ -60,10 +70,13 @@ def displayFeedListing( name_site ):
             XBMCExtensions.endOfDirectory(_handle)
 
 # For the top-level menu, create a list of menu items naming each of the Whiskey Media websites.
+# Also create one menu item that opens the settings page.
 def displaySiteListing():    
     for site in array_sites:
         path =  _path + '?action=1&site=' + urllib.quote_plus(site.name)
         XBMCExtensions.addDirectoryItem(site.name, _handle, path, site.image, True)
+    path =  _path + '?action=3'
+    XBMCExtensions.addDirectoryItem('Change Settings', _handle, path, '', False)
     XBMCExtensions.endOfDirectory(_handle)
 
 # Get the value of a given URL parameter.
@@ -111,5 +124,7 @@ else:
         displayFeedListing(getActionValue('site'))
     elif getActionValue('action') == '2':
         displayVideoListing(getActionValue('site'), getActionValue('feed'))
+    elif getActionValue('action') == '3':
+        plugin_settings.openSettings()
     else:
         displaySiteListing()
