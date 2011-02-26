@@ -21,9 +21,9 @@ class XBMCExtensions:
     
     def getPath():
         if len(sys.argv) >= 3:
-            return int(sys.argv[2])
+            return sys.argv[2]
         else:
-            return 0
+            return ''
     getPath = Callable(getPath)
     
     def addDirectoryItem( name, handle, url ):
@@ -36,7 +36,7 @@ class XBMCExtensions:
     
     def endOfDirectory( handle ):
         if use_xbmc == 1:
-            xbmcplugin.endOfDirectory(_handle)
+            xbmcplugin.endOfDirectory(handle)
         else:
             print "End of list."
     endOfDirectory = Callable(endOfDirectory)
