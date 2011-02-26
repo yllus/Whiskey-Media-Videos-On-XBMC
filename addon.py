@@ -1,5 +1,6 @@
 # Python (system) imports.
 import sys
+import os
 import xml.dom.minidom
 import urllib
 from urlparse import urlparse
@@ -12,6 +13,7 @@ from XBMCExtensions import XBMCExtensions
 
 # Get environmental settings.
 _path = sys.argv[0]
+_pwd = os.getcwd()
 _handle = XBMCExtensions.getHandle()
 _argv = XBMCExtensions.getPath()
 
@@ -74,7 +76,7 @@ def displayFeedListing( name_site ):
 def displaySiteListing():    
     for site in array_sites:
         path =  _path + '?action=1&site=' + urllib.quote_plus(site.name)
-        XBMCExtensions.addDirectoryItem(site.name, _handle, path, site.image, True)
+        XBMCExtensions.addDirectoryItem(site.name, _handle, path, _pwd + '/' + site.image, True)
     path =  _path + '?action=3'
     XBMCExtensions.addDirectoryItem('Change Settings', _handle, path, '', False)
     XBMCExtensions.endOfDirectory(_handle)
