@@ -30,7 +30,9 @@ class XBMCExtensions:
     getSettings = Callable(getSettings)
     
     def addDirectoryItem( name, handle, url, image, isfolder ):
-        listItem = xbmcgui.ListItem(name, image, image)
+        listItem = xbmcgui.ListItem(name)
+        if image != '':
+            listItem.setIconImage(image)
         xbmcplugin.addDirectoryItem(handle, url, listItem, isfolder)
     addDirectoryItem = Callable(addDirectoryItem)
     
