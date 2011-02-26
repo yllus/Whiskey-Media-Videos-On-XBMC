@@ -2,10 +2,8 @@
 import sys
 
 # XBMC imports (if XBMC is present).
-use_xbmc = 0
-if use_xbmc == 1:
-    import xbmcgui
-    import xbmcplugin
+import xbmcgui
+import xbmcplugin
 
 class Callable:
     def __init__( self, anycallable ):
@@ -26,17 +24,11 @@ class XBMCExtensions:
             return ''
     getPath = Callable(getPath)
     
-    def addDirectoryItem( name, handle, url, isfolder ):
-        if use_xbmc == 1:
-            listItem = xbmcgui.ListItem(name)
-            xbmcplugin.addDirectoryItem(handle, url, listItem, isfolder)
-        else:
-            print "Item " + name + " points to URL " + url
+    def addDirectoryItem( name, handle, url, image, isfolder ):
+        listItem = xbmcgui.ListItem(name, image, image)
+        xbmcplugin.addDirectoryItem(handle, url, listItem, isfolder)
     addDirectoryItem = Callable(addDirectoryItem)
     
     def endOfDirectory( handle ):
-        if use_xbmc == 1:
-            xbmcplugin.endOfDirectory(handle)
-        else:
-            print "End of list."
+        xbmcplugin.endOfDirectory(handle)
     endOfDirectory = Callable(endOfDirectory)
