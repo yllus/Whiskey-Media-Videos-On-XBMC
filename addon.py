@@ -92,7 +92,7 @@ def getActionValue( name_action ):
 
 # Read a list of sites and feeds from an XML file into memory.
 def getSitesAndFeeds():
-    doc = xml.dom.minidom.parse('sites.xml')
+    doc = xml.dom.minidom.parse(_pwd + '/sites.xml')
     
     # Iterate through the list of sites in the XML feed.
     for node_site in doc.getElementsByTagName('site'):
