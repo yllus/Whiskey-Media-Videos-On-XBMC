@@ -117,9 +117,7 @@ getSitesAndFeeds()
 
 # Call an action based on the parameters the script is run using.
 #print "_argv = " + _argv 
-if wm_username == '' or wm_password == '':
-    plugin_settings.openSettings()
-elif not _argv:
+if not _argv:
     displaySiteListing()
 else:
     if getActionValue('action') == '1':
@@ -130,3 +128,6 @@ else:
         plugin_settings.openSettings()
     else:
         displaySiteListing()
+
+if wm_username == '' or wm_password == '':
+    plugin_settings.openSettings()
