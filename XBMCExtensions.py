@@ -25,6 +25,11 @@ class XBMCExtensions:
             return ''
     getPath = Callable(getPath)
     
+    def showDialog( heading, line1, line2 ):
+        dialog = xbmcgui.Dialog()
+        ok = dialog.ok(heading, line1, line2)
+    showDialog = Callable(showDialog)
+    
     def getSettings( plugin_id ):
         return xbmcaddon.Addon(plugin_id)
     getSettings = Callable(getSettings)
