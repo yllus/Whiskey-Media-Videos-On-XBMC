@@ -50,7 +50,11 @@ def displayVideoListing( name_site, name_feed ):
                     url = url.replace('${USERNAME}', wm_username)
                     url = url.replace('${PASSWORD}', wm_password)
     
-    doc = xml.dom.minidom.parseString(urllib.urlopen(url).read())
+    try:
+        doc = xml.dom.minidom.parseString(urllib.urlopen(url).read())
+    except:
+        XBMCExtensions.showDialog('Error', 'Could not retrieve list of videos.', 'Please ensure your username/password is valid.')
+        return 0
     
     # Iterate through the list of items in the feed.
     for node_item in doc.getElementsByTagName('item'):
@@ -81,10 +85,20 @@ def displaySiteListing():
     XBMCExtensions.addDirectoryItem('Change Settings', _handle, path, '', False)
     XBMCExtensions.endOfDirectory(_handle)
 
+def getAuthenticationSuccess():
+    url = array_sites[0].feeds[0]['high']
+    try:
+        urllib.urlopen(url).read()
+    except:
+        return 0
+    return 1
+
 # Get the value of a given URL parameter.
 def getActionValue( name_action ):
-    o = urlparse(_argv)
-    params = o.query.split('&')
+    args_start = _argv.find('?') + 1
+    args_end = len(_argv)
+    args = _argv[args_start:args_end]
+    params = args.split('&')
     for i in params:
         arr_action = i.split('=', 1)
         if arr_action[0] == name_action:
@@ -116,7 +130,6 @@ def getSitesAndFeeds():
 getSitesAndFeeds()
 
 # Call an action based on the parameters the script is run using.
-#print "_argv = " + _argv 
 if not _argv:
     displaySiteListing()
 else:
@@ -129,5 +142,6 @@ else:
     else:
         displaySiteListing()
 
+# If the username or password is left blank, pop up the settings screen.
 if wm_username == '' or wm_password == '':
     plugin_settings.openSettings()
