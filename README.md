@@ -8,10 +8,10 @@ This add-on allows paid subscribers to the Whiskey Media content network (GiantB
 ComicVine.com and AnimeVice.com) to stream recent videos from any of the sites directly to their XBMC device. 
 
 This add-on features:
-   - Loads content from all 5 Whiskey Media websites
-   - Contains subcategories within each website for easy navigation
-   - Selectable video quality level: HD (High Definition), High, Low and Mobile
-   - The fastest menu load speed money can buy
+-   Loads content from all 5 Whiskey Media websites
+-   Contains subcategories within each website for easy navigation
+-   Selectable video quality level: HD (High Definition), High, Low and Mobile
+-   The fastest menu load speed money can buy
 
 Some screenshots of the add-on in action (apologies for the odd colours, the screenshot utility isn't working 
 quite right):
