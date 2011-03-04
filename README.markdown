@@ -1,9 +1,6 @@
 Whiskey Media Videos on XBMC
 ============================
 
-Introduction
-------------
-
 This add-on allows paid subscribers to the Whiskey Media content network (GiantBomb.com, Tested.com, Screened.com, 
 ComicVine.com and AnimeVice.com) to stream recent videos from any of the sites directly to their XBMC device. 
 
