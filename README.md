@@ -16,14 +16,13 @@ This add-on features:
 Some screenshots of the add-on in action (apologies for the odd colours, the screenshot utility isn't working 
 quite right):
 
-[id]: http://yllus.com/wp-content/uploads/2011/03/plugin.video_.whiskeymedia-01.jpg "The add-ons menu with the Whiskey Media add-on selected"
+![Title](http://yllus.com/wp-content/uploads/2011/03/plugin.video_.whiskeymedia-01.jpg "The add-ons menu with the Whiskey Media add-on selected")
 
-[id]: http://yllus.com/wp-content/uploads/2011/03/plugin.video_.whiskeymedia-02.jpg "Selecting one of the five Whiskey Media websites"
+![Site Selection](http://yllus.com/wp-content/uploads/2011/03/plugin.video_.whiskeymedia-02.jpg "Selecting one of the five Whiskey Media websites")
 
-[id]: http://yllus.com/wp-content/uploads/2011/03/plugin.video_.whiskeymedia-03.jpg "Browsing video categories for GiantBomb.com"
+![Site Categories](http://yllus.com/wp-content/uploads/2011/03/plugin.video_.whiskeymedia-03.jpg "Browsing video categories for GiantBomb.com")
 
-[id]: http://yllus.com/wp-content/uploads/2011/03/plugin.video_.whiskeymedia-04.jpg "Video selection screen within GiantBomb.com's All Videos"
-
+![Videos](http://yllus.com/wp-content/uploads/2011/03/plugin.video_.whiskeymedia-04.jpg "Video selection screen within GiantBomb.com's All Videos")
 
 Installation
 ------------
