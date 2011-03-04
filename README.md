@@ -1,7 +1,8 @@
 Whiskey Media Videos on XBMC
-----------------------------
+============================
 
-INTRODUCTION
+Introduction
+------------
 
 This add-on allows paid subscribers to the Whiskey Media content network (GiantBomb.com, Tested.com, Screened.com, 
 ComicVine.com and AnimeVice.com) to stream recent videos from any of the sites directly to their XBMC device. 
@@ -12,8 +13,20 @@ This add-on features:
    - Selectable video quality level: HD (High Definition), High, Low and Mobile
    - The fastest menu load speed money can buy
 
+Some screenshots of the add-on in action (apologies for the odd colours, the screenshot utility isn't working 
+quite right):
 
-INSTALLATION
+[id]: http://yllus.com/wp-content/uploads/2011/03/plugin.video_.whiskeymedia-01.jpg "The add-ons menu with the Whiskey Media add-on selected"
+
+[id]: http://yllus.com/wp-content/uploads/2011/03/plugin.video_.whiskeymedia-02.jpg "Selecting one of the five Whiskey Media websites"
+
+[id]: http://yllus.com/wp-content/uploads/2011/03/plugin.video_.whiskeymedia-03.jpg "Browsing video categories for GiantBomb.com"
+
+[id]: http://yllus.com/wp-content/uploads/2011/03/plugin.video_.whiskeymedia-04.jpg "Video selection screen within GiantBomb.com's All Videos"
+
+
+Installation
+------------
 
 Install the add-on via the official add-on repository. To install this add-on manually, click the Downloads link 
 on https://github.com/yllus/Whiskey-Media-Videos-On-XBMC/tree/release and extract the files to your XBMC device 
@@ -32,7 +45,8 @@ Lastly, the add-on settings window can be viewed by choosing the Change Settings
 (that is, the one that lists the various Whiskey Media websites).
 
 
-THE AUTHOR
+The Author
+----------
 
 Contact me (Sully Syed) at sully@yllus.com if you're running into issues with the add-on - I'm happy to help out. 
 If you prefer Twitter, my username is sullysyed.
