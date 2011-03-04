@@ -14,6 +14,9 @@ This add-on features:
 
 * The fastest menu load speed money can buy!
 
+Screenshots
+-----------
+
 Some screenshots of the add-on in action (apologies for the odd colours, the screenshot utility isn't working 
 quite right):
 
