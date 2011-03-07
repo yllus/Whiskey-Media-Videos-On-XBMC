@@ -11,18 +11,18 @@ from Feed import Feed
 from SimplerXML import SimplerXML
 from XBMCExtensions import XBMCExtensions
 
-# Get environmental settings.
-_path = sys.argv[0]
-_pwd = os.getcwd()
-_handle = XBMCExtensions.getHandle()
-_argv = XBMCExtensions.getPath()
-
 # Retrieve settings for the plugin.
 plugin_id = 'plugin.video.whiskeymedia'
 plugin_settings = XBMCExtensions.getSettings(plugin_id)
 video_quality = plugin_settings.getSetting('video_quality')
 wm_username = plugin_settings.getSetting('username')
 wm_password = plugin_settings.getSetting('password')
+
+# Get environmental settings.
+_path = sys.argv[0]
+_pwd = plugin_settings.getAddonInfo('path')
+_handle = XBMCExtensions.getHandle()
+_argv = XBMCExtensions.getPath()
 
 # Store the list of sites and feeds inside them.
 array_sites = []
