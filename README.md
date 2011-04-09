@@ -11,6 +11,9 @@ This add-on features:
 * Contains subcategories within each website for easy navigation.
 
 * Selectable video quality level: HD (High Definition), High, Low and Mobile.
+ 
+* Audio streaming of the Giant Bombcast, NintenDownload X-press!, Comic Vine Podcast, This is Only a Test and 
+  Behind the Screened Door podcasts.
 
 * The fastest menu load speed money can buy!
 
