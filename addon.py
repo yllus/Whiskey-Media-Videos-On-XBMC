@@ -45,8 +45,13 @@ def displayVideoListing( name_site, name_feed ):
         if site.name == urllib.unquote_plus(name_site):
             for feed in site.feeds:
                 if feed.name == urllib.unquote_plus(name_feed):
-                    # Swap the username and password into the URL.
-                    url = feed.urls[vq]
+                    # If it's a video feed, use the user-selected video quality.
+                    # Else for audio, always use "high".
+                    if feed.type == 'video':
+                        url = feed.urls[vq]
+                    else:
+                        url = feed.urls['high']                    
+                    # Swap the username and password into the URL.                    
                     url = url.replace('${USERNAME}', wm_username)
                     url = url.replace('${PASSWORD}', wm_password)
     
@@ -119,6 +124,7 @@ def getSitesAndFeeds():
         for node_feed in node_site.getElementsByTagName('feed'):
             feed = Feed()
             feed.name = node_feed.getAttribute('name')
+            feed.type = node_feed.getAttribute('type')
             for node_url in node_feed.getElementsByTagName('url'):
                 url_quality = node_url.getAttribute('quality')
                 feed.urls[url_quality] = SimplerXML.getText(node_url, 'url')
