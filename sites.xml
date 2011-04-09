@@ -1,7 +1,7 @@
 <sites>
 	<site name="GiantBomb.com" image="giantbomb.png">
 		<feeds>
-			<feed name="All Videos">
+			<feed type="video" name="All Videos">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/</url>
@@ -9,7 +9,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/</url>
 				</urls>
 			</feed>
-			<feed name="Endurance Run">
+			<feed type="video" name="Endurance Run">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/5/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/5/</url>
@@ -17,7 +17,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/5/</url>
 				</urls>
 			</feed>
-			<feed name="Events">
+			<feed type="video" name="Events">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/6/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/6/</url>
@@ -25,7 +25,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/6/</url>
 				</urls>
 			</feed>
-			<feed name="Features">
+			<feed type="video" name="Features">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/8/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/8/</url>
@@ -33,7 +33,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/8/</url>
 				</urls>
 			</feed>
-			<feed name="Gameplay">
+			<feed type="video" name="Gameplay">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/9/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/9/</url>
@@ -41,7 +41,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/9/</url>
 				</urls>
 			</feed>
-			<feed name="Quick Looks">
+			<feed type="video" name="Quick Looks">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/3/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/3/</url>
@@ -49,7 +49,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/3/</url>
 				</urls>
 			</feed>
-			<feed name="Reviews">
+			<feed type="video" name="Reviews">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/2/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/2/</url>
@@ -57,7 +57,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/2/</url>
 				</urls>
 			</feed>
-			<feed name="This Ain't No Game (TANG)">
+			<feed type="video" name="This Ain't No Game (TANG)">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/4/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/4/</url>
@@ -65,7 +65,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/4/</url>
 				</urls>
 			</feed>
-			<feed name="Trailers">
+			<feed type="video" name="Trailers">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/hd/7/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/high/7/</url>
@@ -73,10 +73,20 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=giant-bomb&amp;next=/videos/feed/mobile/7/</url>
 				</urls>
 			</feed>
+			<feed type="audio" name="Giant Bombcast">
+				<urls>
+					<url quality="high">http://www.giantbomb.com/podcast-xml/</url>
+				</urls>
+			</feed>			
+			<feed type="audio" name="NintenDownload X-press!">
+				<urls>
+					<url quality="high">http://blog.jeffgerstmann.net/?feed=podcast&amp;format=mp3</url>
+				</urls>
+			</feed>			
 		</feeds>
 	</site>
 	<site name="Tested.com" image="tested.png">
-			<feed name="All Videos">
+			<feed type="video" name="All Videos">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/hd/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/high/</url>
@@ -84,7 +94,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/mobile/</url>
 				</urls>
 			</feed>
-			<feed name="Events">
+			<feed type="video" name="Events">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/hd/3/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/high/3/</url>
@@ -92,7 +102,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/mobile/3/</url>
 				</urls>
 			</feed>
-			<feed name="Features">
+			<feed type="video" name="Features">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/hd/2/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/high/2/</url>
@@ -100,7 +110,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/mobile/2/</url>
 				</urls>
 			</feed>
-			<feed name="First Looks">
+			<feed type="video" name="First Looks">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/hd/5/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/high/5/</url>
@@ -108,7 +118,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/mobile/5/</url>
 				</urls>
 			</feed>
-			<feed name="How To">
+			<feed type="video" name="How To">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/hd/1/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/high/1/</url>
@@ -116,7 +126,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/mobile/1/</url>
 				</urls>
 			</feed>
-			<feed name="Reviews">
+			<feed type="video" name="Reviews">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/hd/4/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/high/4/</url>
@@ -124,9 +134,14 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=tested&amp;next=/videos/feed/mobile/4/</url>
 				</urls>
 			</feed>
+			<feed type="audio" name="This is Only a Test">
+				<urls>
+					<url quality="high">http://www.tested.com/podcast-xml/</url>
+				</urls>
+			</feed>
 	</site>
 	<site name="Screened.com" image="screened.png">
-			<feed name="All Videos">
+			<feed type="video" name="All Videos">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/hd/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/high/</url>
@@ -134,7 +149,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/mobile/</url>
 				</urls>
 			</feed>
-			<feed name="Besties">
+			<feed type="video" name="Besties">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/hd/5/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/high/5/</url>
@@ -142,7 +157,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/mobile/5/</url>
 				</urls>
 			</feed>
-			<feed name="Defending Your Movie">
+			<feed type="video" name="Defending Your Movie">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/hd/3/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/high/3/</url>
@@ -150,7 +165,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/mobile/3/</url>
 				</urls>
 			</feed>
-			<feed name="Features">
+			<feed type="video" name="Features">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/hd/1/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/high/1/</url>
@@ -158,7 +173,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/mobile/1/</url>
 				</urls>
 			</feed>
-			<feed name="Remake Rematch">
+			<feed type="video" name="Remake Rematch">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/hd/4/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/high/4/</url>
@@ -166,7 +181,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/mobile/4/</url>
 				</urls>
 			</feed>
-			<feed name="Trailers">
+			<feed type="video" name="Trailers">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/hd/2/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/high/2/</url>
@@ -174,9 +189,14 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=screened&amp;next=/videos/feed/mobile/2/</url>
 				</urls>
 			</feed>
+			<feed type="audio" name="Behind the Screened Door">
+				<urls>
+					<url quality="high">http://www.screened.com/podcast-xml/</url>
+				</urls>
+			</feed>
 	</site>
 	<site name="ComicVine.com" image="comicvine.png">
-			<feed name="All Videos">
+			<feed type="video" name="All Videos">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/</url>
@@ -184,7 +204,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/</url>
 				</urls>
 			</feed>
-			<feed name="3-Min. Expert">
+			<feed type="video" name="3-Min. Expert">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/7/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/7/</url>
@@ -192,7 +212,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/7/</url>
 				</urls>
 			</feed>
-			<feed name="Events">
+			<feed type="video" name="Events">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/4/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/4/</url>
@@ -200,7 +220,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/4/</url>
 				</urls>
 			</feed>
-			<feed name="Features">
+			<feed type="video" name="Features">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/3/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/3/</url>
@@ -208,7 +228,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/3/</url>
 				</urls>
 			</feed>
-			<feed name="News">
+			<feed type="video" name="News">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/5/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/5/</url>
@@ -216,7 +236,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/5/</url>
 				</urls>
 			</feed>
-			<feed name="Preview Theatre">
+			<feed type="video" name="Preview Theatre">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/8/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/8/</url>
@@ -224,7 +244,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/8/</url>
 				</urls>
 			</feed>
-			<feed name="Reviews">
+			<feed type="video" name="Reviews">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/1/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/1/</url>
@@ -232,7 +252,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/1/</url>
 				</urls>
 			</feed>
-			<feed name="Trailers">
+			<feed type="video" name="Trailers">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/hd/2/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/high/2/</url>
@@ -240,9 +260,14 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=comic-vine&amp;next=/feed/mobile/2/</url>
 				</urls>
 			</feed>
+			<feed type="audio" name="Comic Vine Podcast">
+				<urls>
+					<url quality="high">http://www.comicvine.com/podcast/xml/</url>
+				</urls>
+			</feed>
 	</site>
 	<site name="AnimeVice.com" image="animevice.png">
-			<feed name="All Videos">
+			<feed type="video" name="All Videos">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/hd/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/high/</url>
@@ -250,7 +275,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/mobile/</url>
 				</urls>
 			</feed>
-			<feed name="3-Minute Expert">
+			<feed type="video" name="3-Minute Expert">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/hd/5/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/high/5/</url>
@@ -258,7 +283,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/mobile/5/</url>
 				</urls>
 			</feed>
-			<feed name="Feature">
+			<feed type="video" name="Feature">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/hd/3/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/high/3/</url>
@@ -266,7 +291,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/mobile/3/</url>
 				</urls>
 			</feed>
-			<feed name="Q &amp; A">
+			<feed type="video" name="Q &amp; A">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/hd/7/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/high/7/</url>
@@ -274,7 +299,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/mobile/7/</url>
 				</urls>
 			</feed>
-			<feed name="Reviews">
+			<feed type="video" name="Reviews">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/hd/1/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/high/1/</url>
@@ -282,7 +307,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/mobile/1/</url>
 				</urls>
 			</feed>
-			<feed name="Trailers">
+			<feed type="video" name="Trailers">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/hd/2/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/high/2/</url>
@@ -290,7 +315,7 @@
 					<url quality="mobile">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/mobile/2/</url>
 				</urls>
 			</feed>
-			<feed name="Trailer Blast!">
+			<feed type="video" name="Trailer Blast!">
 				<urls>
 					<url quality="hd">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/hd/6/</url>
 					<url quality="high">https://${USERNAME}:${PASSWORD}@auth.whiskeymedia.com/login/basic-auth/?from_site=anime-vice&amp;next=/videos/feed/high/6/</url>
