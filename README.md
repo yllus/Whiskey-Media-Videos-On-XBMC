@@ -12,8 +12,8 @@ This add-on features:
 
 * Selectable video quality level: HD (High Definition), High, Low and Mobile.
  
-* Audio streaming of the Giant Bombcast, NintenDownload X-press!, Comic Vine Podcast, This is Only a Test and 
-  Behind the Screened Door podcasts.
+* Audio streaming of the Giant Bombcast, Comic Vine Podcast, This is Only a Test and Behind the Screened 
+  Door podcasts.
 
 * The fastest menu load speed money can buy!
 
@@ -49,6 +49,18 @@ available as an option, as are two lower levels of video quality.
 
 Lastly, the add-on settings window can be viewed by choosing the Change Settings option in the top-level menu list 
 (that is, the one that lists the various Whiskey Media websites).
+
+
+Known Issues
+------------
+
+* Once a video has been streamed in its entirety, it is removed from the RSS feed your user account sees. This has the effect of making the video 
+  you've just watched disappear from the video list. This appears to be intentional behaviour designed to lower bandwidth usage. For this reason, 
+  I don't recommend use of the HD quality mode.
+
+* Retrieval of the video feeds appears to require your Giant Bomb / Tested / Screened / etc website password, as opposd to your overall Whiskey 
+  Media Multi-Pass username. For this reason, if you do not have the same username across each website you will encounter an error when trying 
+  to retrieve a list of videos from a website where your username is not what you specified in the add-on settings page. 
 
 
 The Author
